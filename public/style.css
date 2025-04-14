@@ -1,0 +1,125 @@
+/* Estilos generales del cuerpo */
+body {
+  font-family: "Georgia", serif;
+  background-color: #f5f3f7; /* Fondo suave, color pastel */
+  color: #4a3f57; /* Color oscuro pero cálido para el texto */
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+header {
+  background-color: #fae3e3; /* Color suave, rosa claro */
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #b46e91; /* Rosa más fuerte para darle un toque más femenino */
+}
+
+p {
+  font-size: 1.2rem;
+  color: #7c4f68; /* Un color morado suave */
+}
+
+/* Contenedor de poemas */
+#poems-container {
+  display: flex;
+  flex-wrap: wrap; /* Las tarjetas se acomodarán en filas si es necesario */
+  justify-content: flex-start; /* Alinea las tarjetas a la izquierda */
+  gap: 20px; /* Espacio entre las tarjetas */
+  padding: 20px;
+  margin-top: 30px; /* Separar del encabezado */
+  max-width: 100%; /* Asegura que el contenedor no se desborde */
+  box-sizing: border-box;
+  width: 100%; /* Hace que el contenedor ocupe todo el ancho disponible */
+  align-items: flex-start; /* Alineación superior */
+  overflow: hidden; /* Evita que los elementos se desborden */
+}
+
+/* Estilo de la frase de carga */
+#loading-message {
+  font-size: 1.5rem;
+  color: #7c4f68;
+  text-align: center;
+  margin-top: 50px;
+  width: 100%; /* Asegurar que ocupe todo el espacio */
+}
+
+/* Estilo de las tarjetas de poema */
+.card {
+  background-color: #fff5f8;
+  border: 1px solid #f5c6d7;
+  padding: 15px;
+  border-radius: 15px;
+  flex: 1 1 400px; /* Deja que las tarjetas se ajusten al espacio disponible, con un tamaño mínimo mayor */
+  min-height: 400px; /* O ajustalo según lo que te parezca visualmente correcto */
+  max-width: 420px; /* Limita el ancho máximo de las tarjetas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px; /* Asegura un pequeño margen debajo de cada tarjeta */
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos dentro de la tarjeta estén alineados verticalmente */
+  justify-content: space-between; /* Distribuye bien el contenido interno */
+  height: 100%; /* Hace que tome el 100% del alto disponible en su fila */
+}
+
+/* Efecto hover para las tarjetas */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.poem-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #b46e91; /* Título en un rosa más intenso */
+  margin-bottom: 10px;
+}
+
+.poem-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #4a3f57;
+  margin-bottom: 15px;
+}
+
+/* Estilo del pie de página */
+footer {
+  background-color: #fae3e3; /* Fondo suave, rosa claro */
+  padding: 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer p {
+  color: #7c4f68;
+  font-size: 1.2rem;
+}
+
+/* Media Query para pantallas grandes o más anchas */
+@media (min-width: 1200px) {
+  #poems-container {
+    justify-content: flex-start; /* Asegura que las tarjetas se alineen horizontalmente */
+  }
+
+  .card {
+    flex: 1 1 400px; /* Esto permite que las tarjetas tengan más espacio */
+    max-width: 420px; /* Limita el ancho máximo de las tarjetas */
+  }
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  #poems-container {
+    flex-direction: row; /* Las tarjetas deben alinearse horizontalmente */
+    justify-content: center; /* Centra las tarjetas */
+  }
+
+  .card {
+    width: 100%; /* Las tarjetas ocuparán todo el ancho */
+    max-width: none; /* Elimina el límite de ancho máximo */
+  }
+}
