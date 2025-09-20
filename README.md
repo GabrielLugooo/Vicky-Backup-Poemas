@@ -1,4 +1,4 @@
-<img align="center" src="<img align="center" src="https://i.imgur.com/ZgHWFhw.png" alt="gabriellugo" />" alt="gabriellugo" />
+<img align="center" src="https://i.imgur.com/ZgHWFhw.png" alt="gabriellugo" />
 
 <a href="https://github.com/GabrielLugooo/Vicky-Backup-Poemas" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/Backup%20de%20Poemas%20de%20Vicky-green" alt="backuppoemasvicky" /></a>
 
